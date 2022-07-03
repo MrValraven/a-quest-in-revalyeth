@@ -14,9 +14,9 @@ const Home = () => {
           <h1> Deities </h1>
           <p>
             {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
-            temporibus dolores? Deserunt earum maiores dolorem magnam, quisquam
-            cum ex eligendi.{" "}
+            A list of the deities that control the universe in which Revalyeth
+            exists. Each one symbolizes one of the 9 major aligments and a set
+            of rules for their followers.{" "}
           </p>
         </Link>
         <Link className="card" to="/characterbuilder">
@@ -24,9 +24,8 @@ const Home = () => {
           <h1> Character Builder </h1>
           <p>
             {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
-            temporibus dolores? Deserunt earum maiores dolorem magnam, quisquam
-            cum ex eligendi.{" "}
+            Create your character and venture out on an intrepid quest on the
+            magical world of roleplaying games{" "}
           </p>
         </Link>
       </div>

@@ -1,0 +1,58 @@
+@use "../../styles/colors";
+
+.swordButton {
+  appearance: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 300px;
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 10;
+  text-shadow: 0 0;
+  color: colors.$backgroundColor;
+  box-shadow: 0 0 0px 80px darken($color: colors.$textColor, $amount: 0%);
+  background: lighten($color: colors.$textColor, $amount: 0%);
+  transition: 0.3s, box-shadow 0.3s 0.3s, background 0.3s 0.3s, color 0.3s 0.3s;
+  clip-path: polygon(
+    0 0,
+    10px 0,
+    10px 0,
+    100% 0,
+    100% 50%,
+    100% 100%,
+    10px 100%,
+    10px 100%,
+    0 100%,
+    0 calc(50% + 10px),
+    0 calc(50% + 10px),
+    0 calc(50% + 10px),
+    0 calc(50% - 10px),
+    0 calc(50% - 10px),
+    0 calc(50% - 10px)
+  );
+  &:hover {
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s, clip-path 0.2s 0.2s;
+    clip-path: polygon(
+      0 -20px,
+      20px -30px,
+      20px 0,
+      calc(100% - 10px) 0,
+      calc(100% + 20px) 50%,
+      calc(100% - 10px) 100%,
+      20px 100%,
+      20px calc(100% + 30px),
+      0 calc(100% + 20px),
+      0 calc(50% + 10px),
+      -35px calc(50% + 10px),
+      -40px calc(50% + 15px),
+      -40px calc(50% - 15px),
+      -35px calc(50% - 10px),
+      0 calc(50% - 10px)
+    );
+  }
+}
