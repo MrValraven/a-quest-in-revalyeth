@@ -9,6 +9,7 @@
 
   .homeTitle {
     font-size: 72px;
+    margin-bottom: 50px;
   }
 
   .links {
@@ -25,14 +26,11 @@
       border: 2px solid darken(colors.$textColor, 20%);
       color: colors.$textColor;
       width: 400px;
-      box-shadow: -7px -7px 20px 0px rgba(0, 0, 0, 0.6),
-        -4px -4px 5px 0px rgba(0, 0, 0, 0.6), 7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001, inset 0px 0px 0px 0px rgba(10, 10, 10, 0.6),
-        inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px rgba(17, 17, 17, 0.6),
-        inset 0px 0px 0px 0px #0001;
-      transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
       &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 4px colors.$textColor;
       }
 
       h1 {
