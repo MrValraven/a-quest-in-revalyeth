@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import "./app.scss";
+import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import DeityCard from "./components/DeityCard/DeityCard";
-import gods from "./static/gods";
+import Deities from "./pages/Deities/Deities";
+import Home from "./pages/Home/Home";
 
 function App() {
   let location = useLocation();
@@ -13,16 +14,11 @@ function App() {
 
   return (
     <div className="app">
-      {gods.map((god) => (
-        <DeityCard
-          key={god.id}
-          godImage={god.image}
-          symbol={god.symbol}
-          name={god.details.name}
-          title={god.details.title}
-          alignment={god.details.alignment}
-        />
-      ))}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/deities" element={<Deities />} />
+        <Route path="/characterbuilder" element={<Deities />} />
+      </Routes>
     </div>
   );
 }

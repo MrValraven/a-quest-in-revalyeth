@@ -3,6 +3,8 @@
 .deityCardContainer {
   display: flex;
   flex-direction: column-reverse;
+  width: 300px;
+  height: 400px;
 
   .alignment {
     margin-bottom: 5px;
@@ -16,7 +18,8 @@
   .deityCard {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 250px;
+    max-width: 300px;
+    width: 300px;
     height: 400px;
     border: 10px solid lighten(colors.$backgroundColor, 13%);
     border-radius: 6px;

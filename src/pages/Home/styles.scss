@@ -1,0 +1,48 @@
+@use "../../styles/colors";
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .homeTitle {
+    font-size: 72px;
+  }
+
+  .links {
+    display: flex;
+    gap: 50px;
+
+    .card {
+      appearance: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 20px;
+      border: 2px solid darken(colors.$textColor, 20%);
+      color: colors.$textColor;
+      width: 400px;
+      box-shadow: -7px -7px 20px 0px rgba(0, 0, 0, 0.6),
+        -4px -4px 5px 0px rgba(0, 0, 0, 0.6), 7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001, inset 0px 0px 0px 0px rgba(10, 10, 10, 0.6),
+        inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px rgba(17, 17, 17, 0.6),
+        inset 0px 0px 0px 0px #0001;
+      transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
