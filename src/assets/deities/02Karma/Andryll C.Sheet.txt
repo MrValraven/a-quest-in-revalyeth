@@ -1,0 +1,12 @@
+Class : Rogue
+Race : Elf
+Age : 149
+
+Traits / Bonds / ideals :
+
+"I am always calm no matter what the situation. I never raise my voice or let my emotions control me"
+
+There's a spark of good in everyone
+
+Cantrips :
+Minor Illusion
