@@ -27,6 +27,7 @@ const DeityCard = ({ godImage, symbol, name, title, alignment }) => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic porro
             architecto provident modi? Veniam, error?
           </p>
+          <button>Details</button>
         </div>
       </div>
       <h4 className="alignment">{alignment}</h4>

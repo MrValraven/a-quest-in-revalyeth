@@ -70,6 +70,27 @@
         color: darken(colors.$textColor, 7%);
         opacity: 0.8;
       }
+
+      button {
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 12px;
+        appearance: none;
+        background-color: colors.$backgroundColor;
+        color: colors.$textColor;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+          cursor: pointer;
+          background-color: colors.$textColor;
+          color: colors.$backgroundColor;
+        }
+      }
     }
 
     img {
