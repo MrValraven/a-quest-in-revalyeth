@@ -1,0 +1,26 @@
+.deityPage {
+    display: flex;
+
+    .image {
+        height: 100vh;
+        margin-right: 50px;
+    }
+    
+    .deityDetails {
+        margin-top: 50px;
+        padding-right: 200px;
+
+        h1 {
+            font-size: 72px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin-top: -20px;
+            opacity: 0.5;
+        }
+    }
+}

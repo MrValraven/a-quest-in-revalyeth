@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
+import {useNavigate } from 'react-router-dom'
 import "./styles.scss";
 
 const DeityCard = ({ godImage, symbol, name, title, alignment }) => {
   const [image, setImage] = useState("");
+
+  let navigate = useNavigate();
 
   useEffect(() => {
     setImage(godImage);
@@ -27,7 +30,7 @@ const DeityCard = ({ godImage, symbol, name, title, alignment }) => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic porro
             architecto provident modi? Veniam, error?
           </p>
-          <button>Details</button>
+          <button onClick={() => navigate(`${name}`)}>Details</button>
         </div>
       </div>
       <h4 className="alignment">{alignment}</h4>
