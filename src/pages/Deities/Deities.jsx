@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Deities = () => {
   return (
-    <div>
+    <div className="deities">
       <DeityCardList />
     </div>
   );
