@@ -15,7 +15,7 @@ const CharacterBuilder = () => {
       <h1>Welcome to the great tomb of Character Building!</h1>
       <h2>
         Traverse through this dangerous dungeon and come out as a fierce
-        adventure.
+        adventurer.
       </h2>
       <form onSubmit={handleSubmit}>
         <div className="charInput">
