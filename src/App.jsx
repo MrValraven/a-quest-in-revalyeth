@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/deities" element={<Deities />} />
         <Route path="/deities/:name" element={<DeityPage />} />
-        <Route path="/characterbuilder" element={<CharacterBuilder />} />
+        <Route path="/character/builder" element={<CharacterBuilder />} />
       </Routes>
     </div>
   );

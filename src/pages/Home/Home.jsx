@@ -19,7 +19,7 @@ const Home = () => {
             of rules for their followers.{" "}
           </p>
         </Link>
-        <Link className="card" to="/characterbuilder">
+        <Link className="card" to="/character/builder">
           <img src={Wizard} alt="" />
           <h1> Character Builder </h1>
           <p>
